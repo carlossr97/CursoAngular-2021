@@ -12,7 +12,7 @@ import { ContadorModule } from './contadorModule/contador.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent 
    
     
   ],
