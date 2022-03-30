@@ -1,0 +1,33 @@
+<H1 style="text-align: center; padding-top: 3%;"> Contador </H1>
+<hr>
+
+<h3 style="text-align: center; padding-bottom: 3%;">La base es de: {{base}}</h3>
+<div style=" justify-content: center; display: flex; padding-bottom: 4%; ">
+    <button type="button " class="btn btn-danger " (click)="acumular(base)"> + </button>
+    <span style="padding-left: 2%; padding-right: 2%; padding-top: 0.5%; font-size:150%; "> {{ numero }} </span>
+    <button type="button " class="btn btn-danger " (click)="acumular(-base)"> - </button>
+</div>
+<button type="button " class="btn btn-danger " (click)="reset()"> RESET </button>
+<div>
+
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Historial de numeros</th>
+
+        </tr>
+    </thead>
+    <table>
+        <tbody>
+            <tr>
+                <th scope="row"></th>
+
+                <td *ngFor="let item of historial">{{item}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</table>

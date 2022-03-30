@@ -1,0 +1,23 @@
+<h1 style="text-align: center; padding-top: 3%; padding-bottom: 3%;">{{ nombre }}</h1>
+
+<div style="display: flex; justify-content: center;">
+    <dl>
+        <td>Nombre: </td>
+        <dd>{{nombre}}</dd>
+
+        <td>Edad: </td>
+        <dd>{{edad}}</dd>
+
+        <td>Funcion: </td>
+        <dd>{{obtenerNombre()}}</dd>
+
+
+        <td>Capitalizado: </td>
+        <dd>{{nombrecapitalizado}}</dd>
+
+
+        <button type="button" class="btn btn-danger btn-sm " (click)="cambiarNombre()"> Cambiar nombre de heroe </button>
+        <dd> </dd>
+        <button type="button" class="btn btn-danger btn-sm " (click)="cambiarEdad()"> Cambiar edad </button>
+    </dl>
+</div>
