@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { HeroesModule } from './heroes/heroes.modulo';
 import { ContadorModule } from './contadorModule/contador.module';
+import { DBZModule } from './dbz/dbz.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContadorModule } from './contadorModule/contador.module';
     AppRoutingModule,
     MatButtonModule,
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    DBZModule
     
     
   ],
