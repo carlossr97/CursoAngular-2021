@@ -1,11 +1,32 @@
 <h1 style="text-align: center; padding-top: 2%;">Dragon Ball Z</h1>
 <hr>
+<div class="row">
 
-<div>
-    <ul>
-        <li>Krillin - 700</li>
-        <li>Goku - 15000 </li>
-        <li>Vegeta - 14000</li>
-    </ul>
+    <div class="col">
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul *ngFor="let item of personajes">
+            <li>{{item.nombre | titlecase}}</li>
+            <li>{{item.poder}} </li>
+        </ul> -->
+        <app-personajes [personajes]="personajes"></app-personajes>
+    </div>
+
+    <div class="col">
+
+        <h3>Agregar</h3>
+        <hr>
+
+        <form (ngSubmit)="agregar( $event )">
+
+            <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+            <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder">
+
+            <div style="padding-left: 16%;">
+                <button type="submit" class="btn btn-warning btn-sm">Agregar</button>
+            </div>
+        </form>
+
+    </div>
 
 </div>
